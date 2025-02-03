@@ -10,7 +10,7 @@ from datetime import datetime
 mood = input("How are you feeling today? ")
 date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-with open(r"C:\Users\bipinshr\mental_health_projects\mood_log.txt", "a") as file:
+with open("mood_log.txt", "a") as file:
     file.write(f"{date} - {mood}\n")
 
 print("Your mood has been logged. Have a great day!")
